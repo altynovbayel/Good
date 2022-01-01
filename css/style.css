@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.gallery{
+    position: relative;
+}
+
+.gallery::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 30px;
+    background-color: red;
+    top: 112px;
+}
+
+.gallery::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 30px;
+    background-color: red;
+    top: 112px;
+    right: 0;
+}
+
+.title{
+    font-size: 54px;
+    line-height: 62px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.title span{
+    color: #D67E34;
+}
+
+.gallery_img{
+    padding: 15px;
+}
+
+.cooker{
+    margin-top: 100px;
+}
+
+.cooker_photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cooker_photo img{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+footer{
+    margin-top: 100px;
+    background: url('../images/footer-img.jpg')center / cover;
+    width: 100%;
+    height: 60vh;
+}
+
+
+@media (max-width: 950px) {
+    .gallery_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cooker_photo{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .gallery::before{
+        display: none;
+    }
+    .gallery::after {
+        display: none;
+    }
+    .gallery_img{
+        width: 290px;
+    }
+}
+
+@media (max-width: 375px) {
+    .cooker_photo img{
+        width: 270px;
+    }
+    footer{
+        margin-top: 30px;
+        height: 30vh;
+    }
+}
