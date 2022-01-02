@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 body {
     margin: 0;
@@ -216,6 +218,230 @@ body {
 
 .center_block2_body_list li p:nth-child(3) {
     display: none;
+}
+
+/* ============ MENU BLOCK ================ */
+
+section.our-menu-block{
+    background: url('../image/banner-menu.jpg') no-repeat center / cover fixed;
+}
+
+.menu-block{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.menu-block-title{
+    padding-bottom: 138px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-block-title h2{
+    margin: 0;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #fff;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.699);
+}
+
+.menu-block-order-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card1{
+    position: relative;
+}
+
+.recomend-mark::before{
+    height: 36px;
+    width: 124px;
+    content: 'RECOMENDED';
+    position: absolute;
+    background-color: #D67E34;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #fff;
+}
+
+.card-wrapper{
+    padding: 80px 63px 30px 63px;
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img img{
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.card-price::after{
+    width: 50%;
+    height: 50%;
+    content: '$42';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    outline: 0;
+    background-color: #D67E34;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    color: #fff;
+    font-family: 'Cookie', cursive;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.card-title{
+    padding-top: 22px;
+    text-align: center;
+}
+
+.card-title h4{
+    margin: 0;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-bottom: 17px;
+}
+
+.card-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-body{
+    padding-bottom: 20px;
+}
+
+.card-body p{
+    width: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    text-align: center;
+}
+
+.card-btn{
+    padding: 14px 68px;
+    background-color: #D67E34;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card-btn a{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+@media (max-width: 1318px) {
+    .card{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    /* .card-price{
+        display: none;
+    } */
+}
+
+@media (max-width: 375px) {
+    .card{
+        width: 95%;
+
+    }
+}
+
+/* ==================== VIEW BLOCK ================== */
+
+section.view-block{
+    background-color: #E5E5E5;
+}
+
+.view-block-wrap{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    padding: 100px 0;
+}
+
+.view-block-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view-block-card-body{
+    text-align: center;
+    width: 70%;
+    margin-bottom: 76px;
+}
+
+.view-block-card-body i{
+    font-size: 20px;
+    line-height: 27px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.view-block-card-profile{
+    padding-bottom: 16px;
+}
+
+.view-block-card-profile img{
+    width: 100%;
+}
+
+.view-block-card-quest h4{
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    line-height: 27px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+}
+
+.view-block-card-name span{
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: 'Open Sans';
+}
+
+@media (max-width: 1024px) {
+    .view-block-card-body{
+        width: 100%;
+    }
 }
 
 .container {
