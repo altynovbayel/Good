@@ -188,10 +188,10 @@ ul {
 .header_banner_cards {
   display: flex;
   align-items: center;
-  position: absolute;
+  position: relative;
+  justify-content: center;
+  margin-top: -100px;
   z-index: 8;
-  top: 93%;
-  left: 10%;
   flex-wrap: wrap;
 }
 .header_card {
@@ -199,6 +199,7 @@ ul {
   height: 330px;
   background-color: white;
   margin-left: 30px;
+  margin-bottom: 15px;
   box-shadow: 10px 10px 40px 20px #0000001a;
 }
 .header_card img {
@@ -274,7 +275,7 @@ ul {
 }
 @media screen and (max-width: 425px) {
   .header_banner {
-    background: url(/photo/hero\ image.png) center / cover;
+    background: url('/image/HERO2.jpg') center / cover;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -359,7 +360,6 @@ ul {
 }
 
 .center_block_header {
-  padding-top: 300px;
   display: flex;
   flex-wrap: wrap;
   width: 80%;
