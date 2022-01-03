@@ -5,6 +5,17 @@ body {
     font-family: 'Tinos', serif;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .center_block {
     height: 100vh;
 }
@@ -279,12 +290,49 @@ body {
 
 footer {
     margin-top: 100px;
-    background: url('../images/footer-img.jpg')center / cover;
+    background: url('../images/footer-bg.jpg')center / cover;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
+    color: white;
+}
+
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+.footer_title{
+    color: #FF7400;
+}
+
+.footer_info{
+    width: 20%;
+}
+
+.list_link li{
+    margin-bottom: 15px;
+}
+
+.list_link li a{
+    padding: 5px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.list_link li a:hover{
+    background-color: #FF7400;
+    color: white;
 }
 
 
+.contact_list li{
+    margin: 15px 0;
+}
+
+.footer_copiryght{
+    margin-top: 165px;
+}
 
 @media screen and (max-width:978px) {
     .center_block2_body_image {
