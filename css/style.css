@@ -479,7 +479,7 @@ section.our-menu-block {
 .menu-block {
     width: 80%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .menu-block-title {
@@ -932,10 +932,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .header_banner_cards {
-        /* left: 23%; */
-    }
-
     .header_card {
         margin-bottom: 20px;
     }
@@ -1015,7 +1011,7 @@ footer {
     }
 
     .header_card {
-        margin-left: 25px;
+        margin-left: 0;
     }
 }
 
